@@ -1,6 +1,6 @@
+from multiprocessing import Process
 from threading import Thread
 import time
-start_time = time.time()
 start_time = time.time()
 def writer():
     with open("test12.txt", 'w') as fout:
@@ -17,4 +17,8 @@ def notTread():
             fout.write('1fsdfsdfsd')
 notTread(),print((time.time() - (start_time)))
 
+if __name__ == '__main__':
+    proc = Process(target=writer())
+    proc.start()
+print((time.time() - (start_time)))
 #Выполнение через потоки выходят куда эффективнее, чем без них

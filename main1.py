@@ -1,7 +1,11 @@
-#1. Записывает в файл большое количество значений и посчитать время выполнения:
+import math
 import time
 start_time = time.time()
-with open("text.txt",'w') as f:
-    for i in range (1000000):
-        f.write('wefted45fgf')
+def calc():
+
+    m = 0
+    for i in range(0,30000000):
+        m+=1
+    print(m)
+calc()
 print('Время выполнения записи значений в файл: ',(time.time() - (start_time)))

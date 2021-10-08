@@ -1,3 +1,4 @@
+#1. Записывает в файл большое количество значений и посчитать время выполнения:
 import time
 start_time = time.time()
 with open("text.txt",'w') as f:

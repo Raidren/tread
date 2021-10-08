@@ -1,4 +1,4 @@
-import math
+#запись с помощью 6 потоков:
 import time
 import multiprocessing
 def calc():

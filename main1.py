@@ -1,4 +1,4 @@
-import math
+#запись с помощью одного потока:
 import time
 start_time = time.time()
 def calc():
